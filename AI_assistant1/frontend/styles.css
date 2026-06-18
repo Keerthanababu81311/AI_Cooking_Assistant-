@@ -1,0 +1,123 @@
+/* Chat Messages */
+
+.stChatMessage {
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/* Recipe Cards */
+
+.recipe-card {
+    background: #b9c8d6;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.recipe-title {
+    color: #4CAF50;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.section-title {
+    color: #FFA726;
+    margin-top: 15px;
+}
+
+/* ==========================
+   Voice Assistant Orb
+   ========================== */
+
+.voice-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.voice-orb {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #ff6b6b,
+        #6c63ff,
+        #00c6ff
+    );
+
+    animation: pulse 2s infinite;
+
+    box-shadow:
+        0 0 20px rgba(108, 99, 255, 0.6),
+        0 0 50px rgba(108, 99, 255, 0.4);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 40px;
+}
+
+.voice-orb.listening {
+    animation: listeningPulse 1s infinite;
+}
+
+@keyframes pulse {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes listeningPulse {
+
+    0% {
+        transform: scale(1);
+        box-shadow:
+            0 0 20px #6c63ff,
+            0 0 50px #6c63ff;
+    }
+
+    50% {
+        transform: scale(1.15);
+        box-shadow:
+            0 0 40px #00c6ff,
+            0 0 80px #00c6ff;
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow:
+            0 0 20px #6c63ff,
+            0 0 50px #6c63ff;
+    }
+}
+
+/* Timer Card */
+
+.timer-card {
+
+    background: #fff3cd;
+
+    border-left: 6px solid #ff9800;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    margin-top: 10px;
+
+    margin-bottom: 10px;
+}

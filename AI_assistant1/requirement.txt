@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+requests
+pydantic
+sqlalchemy
+faster-whisper
+gtts
+python-multipart
+audio-recorder-streamlit
